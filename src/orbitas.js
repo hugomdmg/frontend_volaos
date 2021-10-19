@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import Esfera from './esfera';
 
 //---------------Coordenadas-----------------------
 let puntosCartesianos = [];
@@ -253,6 +254,8 @@ function planetas(){
     </div>
       <p>Publica tus experiencias alrededor del mundo y contacta con esos amigos que haces en tus aventuras. En volaos podras unirte sin ningún compromiso y dejarnos cuando quieras si no te convence.</p>
     </footer>
+    <Esfera coordenadas={ { nom: "España", lat: 40, lon: -3 },
+        { nom: "", x: 0, y: 0 }} />
     </>
   );
 }
